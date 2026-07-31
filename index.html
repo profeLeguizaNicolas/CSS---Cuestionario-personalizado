@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
+    <title>CSS - Cuestionario personalizado.</title>
+</head>
+
+<body>
+    <h1><span class="celeste">CSS</span> - Cuestionario personalizado.</h1>
+    <p>
+        En esta actividad, los alumnos deberán aplicar estilos <span class="celeste">CSS</span> al cuestionario
+        desarrollado previamente en <span class="naranja">HTML</span>. El sitio deberá contar con una apariencia
+        <b>agradable</b> y <b>moderna</b>, utilizando colores, tipografías, márgenes, rellenos, bordes y espaciados para
+        mejorar la presentación de todos los elementos. Además, el botón de inicio y el botón <b>Enviar</b> deberán
+        incorporar un efecto visual al pasar el cursor sobre ellos <code><i>hover</i></code>, logrando un diseño
+        ordenado y uniforme.
+    </p>
+    <hr>
+    <div class="center">
+        <pre><code class="gris">Cada alumno deberá personalizar el diseño según el tema elegido en la etapa1 (por ejemplo, si el tema es <b style="background-color: black;color: #ECB939;border-radius: 10px; padding: 5px;">Batman</b>, usar colores relacionados con la saga).</code></pre>
+
+    </div>
+    <b>Ejemplo de colores:</b>
+    <br>
+    <div class="center">
+        <table>
+            <tr>
+                <th style="background-color: rgba(27,75, 27, 0.5);">Tema</th>
+                <th style="background-color: rgba(27,75, 27, 0.5);">Primer color</th>
+                <th style="background-color: rgba(27,75, 27, 0.5);">Segundo color</th>
+            </tr>
+            <tr>
+                <td>
+                    <b>🦇 Batman</b>
+                </td>
+                <td style="background-color: #1C1C1C;">
+                    <b>#1C1C1C (Negro)</b>
+                </td>
+                <td style="background-color: #F6C700;">
+                    <b>#F6C700 (Amarillo)</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>🃏 Joker</b>
+                </td>
+                <td style="background-color: #5A2D82;">
+                    <b>#5A2D82 (Violeta)</b>
+                </td>
+                <td style="background-color: #3FA34D;">
+                    <b>#3FA34D (Verde)</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>🦅 Pingüino</b>
+                </td>
+                <td style="background-color: #000000;">
+                    <b>#000000 (Negro)</b>
+                </td>
+                <td style="background-color: #FFFFFF; color: #000000;">
+                    <b>#FFFFFF (Blanco)</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>❓ Acertijo</b>
+                </td>
+                <td style="background-color: #2E8B57;">
+                    <b>#2E8B57 (Verde)</b>
+                </td>
+                <td style="background-color: #1C1C1C;">
+                    <b>#1C1C1C (Negro)</b>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h2>Requisitos técnicos.</h2>
+    <ul>
+        <li>
+            Crear un archivo llamado <code class="gris">style.css</code> y vincularlo en los tres documentos <span
+                class="naranja">HTML</span> <code class="gris">index.html</code>, <code
+                class="gris">cuestionario.html</code>, <code class="gris">resultado.html</code>.
+        </li>
+        <li>
+            No se debe usar estilos <b>inline</b> (<code class="gris">style="..."</code>), todo debe estar en el archivo
+            <span class="celeste">CSS</span>.
+        </li>
+        <li>
+            Usar selectores de clases y elementos.
+        </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <b>Ayuda:</b>
+    <br>
+    <b>Colores y fondos</b>
+    <ul>
+        <li>
+            Colocar un color o imagen de fondo relacionado con el tema. Usar una paleta coherente (2 o 3 colores
+            principales como máximo).
+        </li>
+    </ul>
+
+    <b>Ejemplo de colores de fondo:</b>
+    <pre><code class="cpp"><span class="dorado">body</span>{
+    <span class="celeste">background-color</span>: <span class="naranja">#0d0d0d</span>;
+    <span class="celeste">color</span>: white;
+}</code></pre>
+    <b>Ejemplo de imagen de fondo:</b>
+    <pre><code class="cpp"><span class="dorado">body</span>{
+    <span class="celeste">background-image</span>: <span class="violeta">url</span>(<span class="verde">ruta</span>);
+    <span class="celeste">background-size</span>: cover;
+    <span class="celeste">background-repeat</span>: <span class="naranja">no-repeat</span>;
+}</code></pre>
+    <br>
+    <hr>
+    <br>
+    <b>Botones:</b>
+    <br>
+    <ul>
+        <li>
+            Personalizar los botones para que sean claros y atractivos. Agregar efector <code class="gris">hover</code>
+            (Cuando el usuario pasa el mouse encima).
+        </li>
+    </ul>
+    <b>Ejemplo:</b>
+    <pre><code class="cpp"><span class="dorado">button</span>{
+    <span class="celeste">background-color</span>: <span class="naranja">#ffcc00</span>;
+    <span class="celeste">border</span>: <span class="naranja">none</span>;
+    <span class="celeste">padding</span>: 10<span class="verde">px</span> 20<span class="verde">px</span>;
+    <span class="celeste">border-radius</span>: 8<span class="verde">px</span>;
+    <span class="celeste">font-size</span>: 1<span class="verde">em</span>;
+    <span class="celeste">cursor</span>: <span class="naranja">pointer</span>;
+}
+
+<span class="dorado">button</span>:<span class="naranja">hover</span>{
+    <span class="celeste">background-color</span>: <span class="naranja">#ffd633</span>;
+}</code></pre>
+    <br>
+    <hr>
+    <br>
+    <b>Preguntas.</b>
+    <br>
+    <ul>
+        <li>
+            Organizar las preguntas dentro de cajas o tarjetas. Usar border, sombras o fondos suaves para distinguirlas.
+        </li>
+    </ul>
+    <b>Ejemplo:</b>
+    <pre><code class="cpp"><span class="dorado">fieldset</span>{
+    <span class="celeste">border</span>: 2<span class="verde">px</span> <span class="naranja">solid</span> <span class="naranja">#555</span>;
+    <span class="celeste">border-radius</span>: 10<span class="verde">px</span>;
+    <span class="celeste">padding</span>: 15<span class="verde">px</span>;
+    <span class="celeste">margin-bottom</span>: 20<span class="verde">px</span>;
+    <span class="celeste">background-color</span>: <span class="violeta">rgba</span>(<span class="celeste">255</span>, <span class="celeste">255</span>, <span class="celeste">255</span>, <span class="celeste">0.5</span>);
+}
+
+<span class="dorado">legend</span>{
+    <span class="celeste">font-wight</span>: bold;
+    <span class="celeste">color</span>: <span class="naranja">#ffcc00</span>;
+}</code></pre>
+    <br>
+    <hr>
+    <br>
+    <b>Centrado de tablas.</b>
+    <br>
+    
+    <b>Ejemplo:</b>
+<pre><code class="cpp"><span class="dorado">table</span>{
+    <span class="celeste">margin</span>: <span class="naranja">auto</span>;
+}</code></pre>
+    <hr>
+    <br>
+</body>
+</html>
